@@ -45,48 +45,35 @@ describe('Add player input to array', function () {
 
 describe("Determine winner based on stored player inputs",function () {
     it("Get all indexes of most recent player input",function () {
-        let expect = [0, 2 ,4];
-        let squares = ["X", "O", "X", "O", "X"];
-        let actual = VerifyWinner(squares);
+        let expect = [1, 3];
+        let squares = ["X", "O", null, "O", "X", null, null, null, null];
+        let actual = VerifyWinner({squares: squares, xIsNext: true});
         assert.deepEqual(expect, actual);
-    })
+    });
 
     it("Get all indexes of most recent player input - second test",function () {
-        let expect = [1, 3];
-        let squares = ["X", "O", "X", "O"];
-        let actual = VerifyWinner(squares);
+        let expect = [0, 2, 5];
+        let squares = ["X", "O", "X", "O", null, "X", null,null,null];
+        let actual = VerifyWinner({squares: squares, xIsNext: false});
         assert.deepEqual(expect, actual);
-    })
+    });
 
     it("Get all indexes of most recent player input - again",function () {
-        let expect = [0, 2, 4];
-        let squares = ["X", "O", "X", "O", "X"];
-        let actual = VerifyWinner(squares);
+        let expect = [1, 3, 7];
+        let squares = ["X", "O", "X", "O", "X", null, null,"O", null];
+        let actual = VerifyWinner({squares: squares, xIsNext: true});
         assert.deepEqual(expect, actual);
     })
-})
+});
 
 
 
-function addPlayerInput(squares) {
-    if(LastInputIsX(squares))
-    {
-        squares.push("O");
-    }
-    else
-    {
-        squares.push("X");
-    }
-    return squares;
-}
-
-
-function VerifyWinner(squares){
-    let latestPlayerInput = squares[squares.length - 1];
+function VerifyWinner(squaresInfo){
+    let latestPlayerInput = squaresInfo.xIsNext ? "O" : "X";
     let indexOfLatestPlayerInput = [];
-    for(let counter = 0; counter < squares.length; counter++)
+    for(let counter = 0; counter < squaresInfo.squares.length; counter++)
     {
-        if(squares[counter] == latestPlayerInput)
+        if(squaresInfo.squares[counter] == latestPlayerInput)
         {
             indexOfLatestPlayerInput.push(counter);
         }
