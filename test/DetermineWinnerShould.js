@@ -66,7 +66,18 @@ describe("Determine winner based on stored player inputs",function () {
     })
 });
 
-
+function addPlayerInputToSpecifiedIndex(squareInfo, specifiedIndex) {
+    if(squareInfo.xIsNext == true)
+    {
+        squareInfo.squares[specifiedIndex] = "X";
+    }
+    else
+    {
+        squareInfo.squares[specifiedIndex] = "O";
+    }
+    squareInfo.xIsNext = !squareInfo.xIsNext;
+    return squareInfo;
+}
 
 function GetAllIndexOfRecentInput(squaresInfo){
     let latestPlayerInput = squaresInfo.xIsNext ? "O" : "X";
@@ -81,15 +92,3 @@ function GetAllIndexOfRecentInput(squaresInfo){
     return indexOfLatestPlayerInput;
 }
 
-function addPlayerInputToSpecifiedIndex(squareInfo, specifiedIndex) {
-    if(squareInfo.xIsNext == true)
-    {
-        squareInfo.squares[specifiedIndex] = "X";
-    }
-    else
-    {
-        squareInfo.squares[specifiedIndex] = "O";
-    }
-    squareInfo.xIsNext = !squareInfo.xIsNext;
-    return squareInfo;
-}
