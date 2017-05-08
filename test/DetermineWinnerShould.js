@@ -43,22 +43,22 @@ describe('Add player input to array', function () {
 
 
 
-describe("Determine winner based on stored player inputs",function () {
-    it("Get all indexes of most recent player input - return",function () {
-        let expect = null;
+describe("Get all indexes of most recent player input",function () {
+    it("Get all indexes of most recent player input which is O",function () {
+        let expect = [1,3];
         let squares = ["X", "O", null, "O", "X", null, null, null, null];
         let actual = GetAllIndexOfRecentInput({squares: squares, xIsNext: true});
         assert.deepEqual(expect, actual);
     });
 
-    it("Get all indexes of most recent player input - second test",function () {
+    it("Get all indexes of most recent player input which is X",function () {
         let expect = [0, 2, 5];
         let squares = ["X", "O", "X", "O", null, "X", null,null,null];
         let actual = GetAllIndexOfRecentInput({squares: squares, xIsNext: false});
         assert.deepEqual(expect, actual);
     });
 
-    it("Get all indexes of most recent player input - again",function () {
+    it("Get all indexes of most recent player input which is O",function () {
         let expect = [1, 3, 7];
         let squares = ["X", "O", "X", "O", "X", null, null,"O", null];
         let actual = GetAllIndexOfRecentInput({squares: squares, xIsNext: true});
