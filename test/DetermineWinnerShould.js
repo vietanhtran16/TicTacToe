@@ -4,35 +4,24 @@
 var assert = require('assert');
 
 describe('Add player input to array', function() {
-        it('Should return array when player input is X', function() {
-            let expected = ["X"];
-            let squares = [];
-            let actual = addPlayerInput(squares);
+        it("Add player input based on specified index",function () {
+            let expected = Array(9).fill(null);
+            expected[3] = "X";
+            let squareInfo = Array(9).fill(null);
+            let actual = addPlayerInputToSpecifiedIndex(squareInfo, 3);
             assert.deepEqual(expected, actual);
         });
 
-        it('Insert O if the last input is X', function () {
-            let expected = ["X", "O"];
-            let squares = ["X"];
-            let actual = addPlayerInput(squares);
-            assert.deepEqual(expected, actual);
-        })
-
-        it('Insert X if the last input is O', function () {
-            let expected = ["O", "X"];
-            let squares = ["O"];
-            let actual = addPlayerInput(squares);
-            assert.deepEqual(expected, actual);
-        })
+    it("Add player input based on specified index - second test", function () {
+        let expected = Array(9).fill(null);
+        expected[4] = "X";
+        let squareInfo = Array(9).fill(null);
+        let actual = addPlayerInputToSpecifiedIndex(squareInfo,4);
+        assert.deepEqual(expected, actual);
+    });
 
 });
 
-describe("Add player input to squares array based on specified index",function () {
-    it("Insert X to index 3 of array",function () {
-        let expected = ["O","X","O","X","O","X","O","X","O"];
-        let squares = ["O","X","O",null,"O","X","O","X","O"];
-    })
-})
 
 describe("Check whether latest player input is X or not ", function () {
     it("Latest input is X", function () {
@@ -104,6 +93,7 @@ function VerifyWinner(squares){
     return indexOfLatestPlayerInput;
 }
 
-function addPlayerInputToSpecifiedIndex(squares, specifiedIndex) {
-
+function addPlayerInputToSpecifiedIndex(squareInfo, specifiedIndex) {
+    squareInfo[specifiedIndex] = "X";
+    return squareInfo;
 }
