@@ -101,3 +101,7 @@ function GetAllIndexOfRecentInput(squaresInfo){
     return indexOfLatestPlayerInput;
 }
 
+function DeterminWinner(squaresInfo) {
+    return null;
+}
+
