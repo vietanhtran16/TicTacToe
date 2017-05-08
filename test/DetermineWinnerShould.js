@@ -25,6 +25,20 @@ describe('Add player input to array', function () {
         assert.deepEqual(expected, actual);
     });
 
+    it("Add player input and update xIsNext property when xIsNext is false", function () {
+        let expected = {squares: [null, null, "X", "O", null, "X", "O", null, null,], xIsNext: true};
+        let squareInfo = [null, null, "X", "O", null, "X", null, null, null,];
+        let actual = addPlayerInputToSpecifiedIndex({squares: squareInfo, xIsNext: false}, 6);
+        assert.deepEqual(expected, actual);
+    });
+
+    it("Add player input and update xIsNext property when xIsNext is true", function () {
+        let expected = {squares: [null, "X", null, "X", null, "O", "X", "O", null], xIsNext: false};
+        let squareInfo = [null, null, null, "X", null, "O", "X", "O", null];
+        let actual = addPlayerInputToSpecifiedIndex({squares: squareInfo, xIsNext: true}, 1);
+        assert.deepEqual(expected, actual);
+    });
+
 });
 
 
