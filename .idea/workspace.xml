@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2964e476-b0b1-4d24-b50b-91888f84937d" name="Default" comment="" />
+    <list default="true" id="2964e476-b0b1-4d24-b50b-91888f84937d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/DetermineWinnerShould.js" afterPath="$PROJECT_DIR$/test/DetermineWinnerShould.js" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -18,7 +23,7 @@
       <file leaf-file-name="DeterminWinner.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GameLogic/DeterminWinner.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="21">
               <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
@@ -28,8 +33,18 @@
       <file leaf-file-name="DetermineWinnerShould.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/DetermineWinnerShould.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="63" lean-forward="false" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
+            <state relative-caret-position="415">
+              <caret line="87" column="0" lean-forward="true" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="20" column="3" lean-forward="false" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -44,11 +59,15 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/GameLogic/DeterminWinner.js" />
         <option value="$PROJECT_DIR$/UnitTest/DetermineWinnerShould.js" />
+        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/test/DetermineWinnerShould.js" />
       </list>
     </option>
@@ -76,10 +95,10 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -118,6 +137,21 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="TicTacToe">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -146,45 +180,17 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="untitled">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="untitled">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="test">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="nodejs_interpreter_path" value="D:/NodeJs/node" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files (x86)/nodejs/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="settings.editor.selected.configurable" value="Settings.JavaScript.Templates" />
-    <property name="javascript.nodejs.core.library.configured.version" value="6.10.2" />
-    <property name="nodejs.mocha.mocha_node_package_dir" value="C:\Users\Viet Anh Tran\WebstormProjects\untitled\node_modules\mocha" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="javascript.nodejs.core.library.configured.version" value="6.10.3" />
+    <property name="nodejs.mocha.mocha_node_package_dir" value="C:\Users\Viet.AnhTran\AppData\Roaming\npm\node_modules\mocha" />
     <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -198,7 +204,39 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.DetermineWinnerShould.js">
+  <component name="RunManager" selected="Mocha.Check whether latest player input is X or not ">
+    <configuration default="false" name="Store player inputs in array.Should return array when player input is X" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>TEST</test-kind>
+      <test-file>$PROJECT_DIR$/test/DetermineWinnerShould.js</test-file>
+      <test-names>
+        <name value="Store player inputs in array" />
+        <name value="Should return array when player input is X" />
+      </test-names>
+      <method />
+    </configuration>
+    <configuration default="false" name="Store player inputs in array.Insert X if the last input is O" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>TEST</test-kind>
+      <test-file>$PROJECT_DIR$/test/DetermineWinnerShould.js</test-file>
+      <test-names>
+        <name value="Store player inputs in array" />
+        <name value="Insert X if the last input is O" />
+      </test-names>
+      <method />
+    </configuration>
     <configuration default="false" name="Store player inputs in array" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -214,12 +252,34 @@
       </test-names>
       <method />
     </configuration>
-    <configuration default="false" name="DetermineWinnerShould.js" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <working-dir value="$PROJECT_DIR$" />
+    <configuration default="false" name="Add player input to array" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
       <envs />
-      <scope-kind value="TEST_FILE" />
-      <test-file value="$PROJECT_DIR$/test/DetermineWinnerShould.js" />
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>SUITE</test-kind>
+      <test-file>$PROJECT_DIR$/test/DetermineWinnerShould.js</test-file>
+      <test-names>
+        <name value="Add player input to array" />
+      </test-names>
+      <method />
+    </configuration>
+    <configuration default="false" name="Check whether latest player input is X or not " type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>SUITE</test-kind>
+      <test-file>$PROJECT_DIR$/test/DetermineWinnerShould.js</test-file>
+      <test-names>
+        <name value="Check whether latest player input is X or not " />
+      </test-names>
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -288,14 +348,20 @@
       <recursive>false</recursive>
       <method />
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Mocha.Store player inputs in array" />
-      <item index="1" class="java.lang.String" itemvalue="Jest.DetermineWinnerShould.js" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Mocha.Store player inputs in array.Should return array when player input is X" />
+      <item index="1" class="java.lang.String" itemvalue="Mocha.Store player inputs in array.Insert X if the last input is O" />
+      <item index="2" class="java.lang.String" itemvalue="Mocha.Store player inputs in array" />
+      <item index="3" class="java.lang.String" itemvalue="Mocha.Add player input to array" />
+      <item index="4" class="java.lang.String" itemvalue="Mocha.Check whether latest player input is X or not " />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Jest.DetermineWinnerShould.js" />
-        <item index="1" class="java.lang.String" itemvalue="Mocha.Store player inputs in array" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Mocha.Check whether latest player input is X or not " />
+        <item index="1" class="java.lang.String" itemvalue="Mocha.Add player input to array" />
+        <item index="2" class="java.lang.String" itemvalue="Mocha.Store player inputs in array" />
+        <item index="3" class="java.lang.String" itemvalue="Mocha.Store player inputs in array.Should return array when player input is X" />
+        <item index="4" class="java.lang.String" itemvalue="Mocha.Store player inputs in array.Insert X if the last input is O" />
       </list>
     </recent_temporary>
   </component>
@@ -313,54 +379,60 @@
       <workItem from="1494015123528" duration="2342000" />
       <workItem from="1494199572547" duration="2961000" />
       <workItem from="1494202627216" duration="2003000" />
+      <workItem from="1494207687571" duration="3676000" />
+      <workItem from="1494214497205" duration="2931000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DetermineWinnerShould_js - 2017.05.08 at 12h 48m 07s.xml">
-      <configuration name="DetermineWinnerShould.js" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="Add_player_input_to_array - 2017.05.08 at 14h 43m 42s.xml">
+      <configuration name="Add player input to array" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="DetermineWinnerShould_js - 2017.05.08 at 12h 48m 13s.xml">
-      <configuration name="DetermineWinnerShould.js" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="Add_player_input_to_array - 2017.05.08 at 14h 43m 45s.xml">
+      <configuration name="Add player input to array" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Store_player_inputs_in_array - 2017.05.08 at 12h 07m 09s.xml">
-      <configuration name="Store player inputs in array" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="Add_player_input_to_array - 2017.05.08 at 15h 08m 37s.xml">
+      <configuration name="Add player input to array" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Store_player_inputs_in_array - 2017.05.08 at 12h 07m 27s.xml">
-      <configuration name="Store player inputs in array" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="Add_player_input_to_array - 2017.05.08 at 15h 08m 51s.xml">
+      <configuration name="Add player input to array" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Store_player_inputs_in_array - 2017.05.08 at 12h 08m 08s.xml">
-      <configuration name="Store player inputs in array" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="Check_whether_latest_player_input_is_X_or_not_ - 2017.05.08 at 15h 09m 37s.xml">
+      <configuration name="Check whether latest player input is X or not " configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Store_player_inputs_in_array - 2017.05.08 at 12h 15m 01s.xml">
-      <configuration name="Store player inputs in array" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="Check_whether_latest_player_input_is_X_or_not_ - 2017.05.08 at 15h 09m 39s.xml">
+      <configuration name="Check whether latest player input is X or not " configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Store_player_inputs_in_array - 2017.05.08 at 12h 43m 29s.xml">
-      <configuration name="Store player inputs in array" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="Check_whether_latest_player_input_is_X_or_not_ - 2017.05.08 at 15h 11m 15s.xml">
+      <configuration name="Check whether latest player input is X or not " configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Store_player_inputs_in_array - 2017.05.08 at 12h 43m 56s.xml">
-      <configuration name="Store player inputs in array" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="Check_whether_latest_player_input_is_X_or_not_ - 2017.05.08 at 15h 11m 28s.xml">
+      <configuration name="Check whether latest player input is X or not " configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Store_player_inputs_in_array - 2017.05.08 at 12h 46m 52s.xml">
-      <configuration name="Store player inputs in array" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="Check_whether_latest_player_input_is_X_or_not_ - 2017.05.08 at 15h 11m 34s.xml">
+      <configuration name="Check whether latest player input is X or not " configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Check_whether_latest_player_input_is_X_or_not_ - 2017.05.08 at 15h 12m 37s.xml">
+      <configuration name="Check whether latest player input is X or not " configurationId="mocha-javascript-test-runner" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7904000" />
+    <option name="totallyTimeSpent" value="14511000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15959005" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.159375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32711306" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4400631" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43907794" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -377,10 +449,52 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/GameLogic/DeterminWinner.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="20" column="3" lean-forward="false" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/DetermineWinnerShould.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1134">
+          <caret line="54" column="26" lean-forward="true" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameLogic/DeterminWinner.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/DetermineWinnerShould.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="63" lean-forward="false" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/GameLogic/DeterminWinner.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -420,25 +534,27 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/UnitTest/DetermineWinnerShould.js" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/ide/ide-scripting.js">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/ide/ide-scripting.js" />
+    <entry file="file://$PROJECT_DIR$/GameLogic/DeterminWinner.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="21">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GameLogic/DeterminWinner.js">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="420">
+          <caret line="20" column="3" lean-forward="false" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/DetermineWinnerShould.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="63" lean-forward="false" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
+        <state relative-caret-position="415">
+          <caret line="87" column="0" lean-forward="true" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
           <folding />
         </state>
       </provider>
