@@ -71,14 +71,14 @@ describe("Determine if most recent input has won or not",function () {
         let expect = null;
         let squares = [null, "X", "O", null, "O", "X", null, null,null];
         let actual = DeterminWinner({squares: squares, xIsNext: true });
-        assert.deepEqual(expect, actual);
+        assert.equal(expect, actual);
     });
 
     it("Return winning input when it has won the game - winner line [0,1,2]", function () {
         let expect = "X";
         let squares = ["X", "X", "X", null, "O", "O", null, null,null];
         let actual = DeterminWinner({squares: squares, xIsNext: false });
-        assert.deepEqual(expect, actual);
+        assert.equal(expect, actual);
     });
 
     it("Return winning input when it has won the game - winner line [0,3,6]", function () {
