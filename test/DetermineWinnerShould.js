@@ -5,16 +5,23 @@ var assert = require('assert');
 
 describe('Add player input to array', function() {
         it("Add player input based on specified index - index 3",function () {
-            let expected = { squares: [null,null,null,"X",null,null,null,null,null,], xIsNext: true};
+            let expected = { squares: [null,null,null,"X",null,null,null,null,null,], xIsNext: false};
             let squareInfo = Array(9).fill(null);
             let actual = addPlayerInputToSpecifiedIndex({squares: squareInfo, xIsNext: true}, 3);
             assert.deepEqual(expected, actual);
         });
 
     it("Add player input based on specified index - index 6", function () {
-        let expected = { squares: [null,null,null,null,null,null,"X",null,null,], xIsNext: true};
+        let expected = { squares: [null,null,null,null,null,null,"X",null,null,], xIsNext: false};
         let squareInfo = Array(9).fill(null);
         let actual = addPlayerInputToSpecifiedIndex({squares: squareInfo, xIsNext: true}, 6);
+        assert.deepEqual(expected, actual);
+    });
+
+    it("Update xIsNext property after adding player input", function () {
+        let expected = { squares: [null,null,"X",null,null,null,null,null,null,], xIsNext: false};
+        let squareInfo = Array(9).fill(null);
+        let actual = addPlayerInputToSpecifiedIndex({squares: squareInfo, xIsNext: true}, 2);
         assert.deepEqual(expected, actual);
     });
 
@@ -100,5 +107,6 @@ function addPlayerInputToSpecifiedIndex(squareInfo, specifiedIndex) {
     {
         squareInfo.squares[specifiedIndex] = "O";
     }
+    squareInfo.xIsNext = !squareInfo.xIsNext;
     return squareInfo;
 }
