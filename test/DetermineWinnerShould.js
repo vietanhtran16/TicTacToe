@@ -44,31 +44,31 @@ describe('Add player input to array', function () {
 
 
 describe("Determine winner based on stored player inputs",function () {
-    it("Get all indexes of most recent player input",function () {
-        let expect = [1, 3];
+    it("Get all indexes of most recent player input - return",function () {
+        let expect = null;
         let squares = ["X", "O", null, "O", "X", null, null, null, null];
-        let actual = VerifyWinner({squares: squares, xIsNext: true});
+        let actual = GetAllIndexOfRecentInput({squares: squares, xIsNext: true});
         assert.deepEqual(expect, actual);
     });
 
     it("Get all indexes of most recent player input - second test",function () {
         let expect = [0, 2, 5];
         let squares = ["X", "O", "X", "O", null, "X", null,null,null];
-        let actual = VerifyWinner({squares: squares, xIsNext: false});
+        let actual = GetAllIndexOfRecentInput({squares: squares, xIsNext: false});
         assert.deepEqual(expect, actual);
     });
 
     it("Get all indexes of most recent player input - again",function () {
         let expect = [1, 3, 7];
         let squares = ["X", "O", "X", "O", "X", null, null,"O", null];
-        let actual = VerifyWinner({squares: squares, xIsNext: true});
+        let actual = GetAllIndexOfRecentInput({squares: squares, xIsNext: true});
         assert.deepEqual(expect, actual);
     })
 });
 
 
 
-function VerifyWinner(squaresInfo){
+function GetAllIndexOfRecentInput(squaresInfo){
     let latestPlayerInput = squaresInfo.xIsNext ? "O" : "X";
     let indexOfLatestPlayerInput = [];
     for(let counter = 0; counter < squaresInfo.squares.length; counter++)
