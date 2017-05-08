@@ -4,19 +4,17 @@
 var assert = require('assert');
 
 describe('Add player input to array', function() {
-        it("Add player input based on specified index",function () {
-            let expected = Array(9).fill(null);
-            expected[3] = "X";
+        it("Add player input based on specified index - index 3",function () {
+            let expected = { squares: [null,null,null,"X",null,null,null,null,null,], xIsNext: true};
             let squareInfo = Array(9).fill(null);
-            let actual = addPlayerInputToSpecifiedIndex(squareInfo, 3);
+            let actual = addPlayerInputToSpecifiedIndex({squares: squareInfo, xIsNext: true}, 3);
             assert.deepEqual(expected, actual);
         });
 
-    it("Add player input based on specified index - second test", function () {
-        let expected = Array(9).fill(null);
-        expected[4] = "X";
+    it("Add player input based on specified index - index 6", function () {
+        let expected = { squares: [null,null,null,null,null,null,"X",null,null,], xIsNext: true};
         let squareInfo = Array(9).fill(null);
-        let actual = addPlayerInputToSpecifiedIndex(squareInfo,4);
+        let actual = addPlayerInputToSpecifiedIndex({squares: squareInfo, xIsNext: true}, 6);
         assert.deepEqual(expected, actual);
     });
 
@@ -94,6 +92,13 @@ function VerifyWinner(squares){
 }
 
 function addPlayerInputToSpecifiedIndex(squareInfo, specifiedIndex) {
-    squareInfo[specifiedIndex] = "X";
+    if(squareInfo.xIsNext == true)
+    {
+        squareInfo.squares[specifiedIndex] = "X";
+    }
+    else
+    {
+        squareInfo.squares[specifiedIndex] = "O";
+    }
     return squareInfo;
 }
