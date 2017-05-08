@@ -42,21 +42,6 @@ describe('Add player input to array', function () {
 });
 
 
-describe("Check whether latest player input is X or not ", function () {
-    it("Latest input is X", function () {
-        let expected = true;
-        let squares = ["O", "X", "O", "X"];
-        let actual = LastInputIsX(squares);
-        assert.equal(expected, actual);
-    })
-
-    it("Latest input is not X", function () {
-        let expected = false;
-        let squares = ["O", "X", "O"];
-        let actual = LastInputIsX(squares);
-        assert.equal(expected, actual);
-    })
-});
 
 describe("Determine winner based on stored player inputs",function () {
     it("Get all indexes of most recent player input",function () {
@@ -95,9 +80,6 @@ function addPlayerInput(squares) {
     return squares;
 }
 
-function LastInputIsX(squares) {
-    return squares[squares.length - 1] == "X";
-}
 
 function VerifyWinner(squares){
     let latestPlayerInput = squares[squares.length - 1];
