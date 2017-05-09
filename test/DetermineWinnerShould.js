@@ -101,6 +101,13 @@ describe("Determine if most recent input has won or not",function () {
         let actual = DeterminWinner({squares: squares, xIsNext: true });
         assert.equal(expect, actual);
     });
+
+    it("Return winning input when it has won the game - winner line [1,4,7]", function () {
+        let expect = "O";
+        let squares = [null, "O", "X", null, "O", null, "X", "O","X"];
+        let actual = DeterminWinner({squares: squares, xIsNext: true });
+        assert.equal(expect, actual);
+    });
 });
 
 function addPlayerInputToSpecifiedIndex(squareInfo, specifiedIndex) {
