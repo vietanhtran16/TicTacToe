@@ -132,14 +132,7 @@ describe("Determine if most recent input has won or not",function () {
 });
 
 function addPlayerInputToSpecifiedIndex(squareInfo, specifiedIndex) {
-    if(squareInfo.xIsNext == true)
-    {
-        squareInfo.squares[specifiedIndex] = "X";
-    }
-    else
-    {
-        squareInfo.squares[specifiedIndex] = "O";
-    }
+    squareInfo.squares[specifiedIndex] = squareInfo.xIsNext ? "X" : "O";
     squareInfo.xIsNext = !squareInfo.xIsNext;
     return squareInfo;
 }
