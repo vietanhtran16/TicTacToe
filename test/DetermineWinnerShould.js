@@ -87,6 +87,13 @@ describe("Determine if most recent input has won or not",function () {
         let actual = DeterminWinner({squares: squares, xIsNext: true });
         assert.equal(expect, actual);
     });
+
+    it("Return winning input when it has won the game - winner line [3,4,5]", function () {
+        let expect = "O";
+        let squares = ["O", "X", "X", "O", "O", "O", "X", null,null];
+        let actual = DeterminWinner({squares: squares, xIsNext: true });
+        assert.equal(expect, actual);
+    });
 });
 
 function addPlayerInputToSpecifiedIndex(squareInfo, specifiedIndex) {
@@ -130,9 +137,9 @@ function DeterminWinner(squaresInfo) {
     let allIndexesOfLatestPlayerInput = GetAllIndexOfRecentInput(squaresInfo);
     for(let winnerLine of winnerLines)
     {
-       if(winnerLine.toString() == allIndexesOfLatestPlayerInput.toString())
+       if(allIndexesOfLatestPlayerInput.includes(winnerLine[0]) && allIndexesOfLatestPlayerInput.includes(winnerLine[1]) && allIndexesOfLatestPlayerInput.includes(winnerLine[2]))
        {
-           return squaresInfo.xIsNext ? "O" : "X";
+            return squaresInfo.xIsNext ? "O" : "X";
        }
 
     }
