@@ -116,9 +116,9 @@ describe("Determine if most recent input has won or not",function () {
         assert.equal(expect, actual);
     });
 
-    it("Return winning input when it has won the game - winner line [3,4,5]", function () {
+    it("Return winning input when it has won the game - winner line [0,4,8]", function () {
         let expect = "X";
-        let squares = [null, null, "O", "X", "X", "X", "O", null,null];
+        let squares = ["X", "O", null, null, "X", "O", null, null,"X"];
         let actual = DeterminWinner({squares: squares, xIsNext: false });
         assert.equal(expect, actual);
     });
