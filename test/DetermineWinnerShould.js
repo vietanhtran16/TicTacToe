@@ -69,63 +69,82 @@ describe("Get all indexes of most recent player input",function () {
 describe("Determine if most recent input has won or not",function () {
     it("Return null since most recent input did not win", function () {
         let expect = null;
-        let squares = [null, "X", "O", null, "O", "X", null, null,null];
+        let squares = [null, "X", "O",
+                       null, "O", "X",
+                       null, null,null];
         let actual = DeterminWinner({squares: squares, xIsNext: true });
         assert.equal(expect, actual);
     });
 
     it("Return winning input when it has won the game - winner line [0,1,2]", function () {
         let expect = "X";
-        let squares = ["X", "X", "X", null, "O", "O", null, null,null];
+        let squares = ["X", "X", "X",
+                       null, "O", "O",
+                       null, null,null];
         let actual = DeterminWinner({squares: squares, xIsNext: false });
         assert.equal(expect, actual);
     });
 
     it("Return winning input when it has won the game - winner line [3,4,5]", function () {
         let expect = "O";
-        let squares = ["O", "X", "X", "O", "O", "O", "X", null,null];
+        let squares = ["O", "X", "X",
+                       "O", "O", "O",
+                       "X", null,null];
         let actual = DeterminWinner({squares: squares, xIsNext: true });
         assert.equal(expect, actual);
     });
 
     it("Return winning input when it has won the game - winner line [6,7,8]", function () {
         let expect = "X";
-        let squares = ["O", null, null, null, "O", null, "X", "X","X"];
+        let squares = ["O", null, null,
+                       null, "O", null,
+                       "X", "X","X"];
         let actual = DeterminWinner({squares: squares, xIsNext: false });
         assert.equal(expect, actual);
     });
 
     it("Return winning input when it has won the game - winner line [0,3,6]", function () {
         let expect = "O";
-        let squares = ["O", "X", "X", "O", "X", null, "O", null,null];
+        let squares = ["O", "X", "X",
+                       "O", "X", null,
+                       "O", null,null];
         let actual = DeterminWinner({squares: squares, xIsNext: true });
         assert.equal(expect, actual);
     });
 
     it("Return winning input when it has won the game - winner line [1,4,7]", function () {
         let expect = "O";
-        let squares = [null, "O", "X", null, "O", null, "X", "O","X"];
+        let squares = [null, "O", "X",
+                       null, "O", null,
+                       "X",  "O", "X"];
+
         let actual = DeterminWinner({squares: squares, xIsNext: true });
         assert.equal(expect, actual);
     });
 
     it("Return winning input when it has won the game - winner line [2,5,8]", function () {
         let expect = "X";
-        let squares = [null, "O", "X", null, "O", "X", null, null,"X"];
+        let squares = [null, "O", "X",
+                       null, "O", "X",
+                       null, null,"X"];
         let actual = DeterminWinner({squares: squares, xIsNext: false });
         assert.equal(expect, actual);
     });
 
     it("Return winning input when it has won the game - winner line [0,4,8]", function () {
         let expect = "X";
-        let squares = ["X", "O", null, null, "X", "O", null, null,"X"];
+        let squares = ["X", "O", null,
+                       null, "X", "O",
+                       null, null,"X"];
         let actual = DeterminWinner({squares: squares, xIsNext: false });
         assert.equal(expect, actual);
     });
 
     it("Return winning input when it has won the game - winner line [2,4,6]", function () {
         let expect = "O";
-        let squares = [null, "X", "O", "X", "O", null, "O", "X",null];
+        let squares = [null, "X", "O",
+                       "X", "O", null,
+                       "O", "X",null];
         let actual = DeterminWinner({squares: squares, xIsNext: true });
         assert.equal(expect, actual);
     });
