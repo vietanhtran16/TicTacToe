@@ -6,36 +6,36 @@ var assert = require('assert');
 describe('Add player input to array', function () {
     it("Add player input based on specified index - index 3", function () {
         let expected = {squares: [null, null, null, "X", null, null, null, null, null,], xIsNext: false};
-        let squareInfo = Array(9).fill(null);
-        let actual = addPlayerInputToSpecifiedIndex({squares: squareInfo, xIsNext: true}, 3);
+        let squares = Array(9).fill(null);
+        let actual = addPlayerInputToSpecifiedIndex({squares: squares, xIsNext: true}, 3);
         assert.deepEqual(expected, actual);
     });
 
     it("Add player input based on specified index - index 6", function () {
         let expected = {squares: [null, null, null, null, null, null, "X", null, null,], xIsNext: false};
-        let squareInfo = Array(9).fill(null);
-        let actual = addPlayerInputToSpecifiedIndex({squares: squareInfo, xIsNext: true}, 6);
+        let squares = Array(9).fill(null);
+        let actual = addPlayerInputToSpecifiedIndex({squares: squares, xIsNext: true}, 6);
         assert.deepEqual(expected, actual);
     });
 
     it("Update xIsNext property after adding player input", function () {
         let expected = {squares: [null, null, "X", null, null, null, null, null, null,], xIsNext: false};
-        let squareInfo = Array(9).fill(null);
-        let actual = addPlayerInputToSpecifiedIndex({squares: squareInfo, xIsNext: true}, 2);
+        let squares = Array(9).fill(null);
+        let actual = addPlayerInputToSpecifiedIndex({squares: squares, xIsNext: true}, 2);
         assert.deepEqual(expected, actual);
     });
 
     it("Add player input and update xIsNext property when xIsNext is false", function () {
         let expected = {squares: [null, null, "X", "O", null, "X", "O", null, null,], xIsNext: true};
-        let squareInfo = [null, null, "X", "O", null, "X", null, null, null,];
-        let actual = addPlayerInputToSpecifiedIndex({squares: squareInfo, xIsNext: false}, 6);
+        let squares = [null, null, "X", "O", null, "X", null, null, null,];
+        let actual = addPlayerInputToSpecifiedIndex({squares: squares, xIsNext: false}, 6);
         assert.deepEqual(expected, actual);
     });
 
     it("Add player input and update xIsNext property when xIsNext is true", function () {
         let expected = {squares: [null, "X", null, "X", null, "O", "X", "O", null], xIsNext: false};
-        let squareInfo = [null, null, null, "X", null, "O", "X", "O", null];
-        let actual = addPlayerInputToSpecifiedIndex({squares: squareInfo, xIsNext: true}, 1);
+        let squares = [null, null, null, "X", null, "O", "X", "O", null];
+        let actual = addPlayerInputToSpecifiedIndex({squares: squares, xIsNext: true}, 1);
         assert.deepEqual(expected, actual);
     });
 
@@ -150,18 +150,18 @@ describe("Determine if most recent input has won or not",function () {
     });
 });
 
-function addPlayerInputToSpecifiedIndex(squareInfo, specifiedIndex) {
-    squareInfo.squares[specifiedIndex] = squareInfo.xIsNext ? "X" : "O";
-    squareInfo.xIsNext = !squareInfo.xIsNext;
-    return squareInfo;
+function addPlayerInputToSpecifiedIndex(board, specifiedIndex) {
+    board.squares[specifiedIndex] = board.xIsNext ? "X" : "O";
+    board.xIsNext = !board.xIsNext;
+    return board;
 }
 
-function GetAllIndexOfRecentInput(squaresInfo){
-    let latestPlayerInput = squaresInfo.xIsNext ? "O" : "X";
+function GetAllIndexOfRecentInput(board){
+    let latestPlayerInput = board.xIsNext ? "O" : "X";
     let indexOfLatestPlayerInput = [];
-    for(let counter = 0; counter < squaresInfo.squares.length; counter++)
+    for(let counter = 0; counter < board.squares.length; counter++)
     {
-        if(squaresInfo.squares[counter] == latestPlayerInput)
+        if(board.squares[counter] == latestPlayerInput)
         {
             indexOfLatestPlayerInput.push(counter);
         }
@@ -169,7 +169,7 @@ function GetAllIndexOfRecentInput(squaresInfo){
     return indexOfLatestPlayerInput;
 }
 
-function DeterminWinner(squaresInfo) {
+function DeterminWinner(board) {
     const winnerLines = [
         [0, 1, 2],
         [3, 4, 5],
@@ -181,12 +181,12 @@ function DeterminWinner(squaresInfo) {
         [2, 4, 6]
     ];
 
-    let allIndexesOfLatestPlayerInput = GetAllIndexOfRecentInput(squaresInfo);
+    let allIndexesOfLatestPlayerInput = GetAllIndexOfRecentInput(board);
     for(let winnerLine of winnerLines)
     {
        if(allIndexesOfLatestPlayerInput.includes(winnerLine[0]) && allIndexesOfLatestPlayerInput.includes(winnerLine[1]) && allIndexesOfLatestPlayerInput.includes(winnerLine[2]))
        {
-           return squaresInfo.xIsNext ? "O" : "X";
+           return board.xIsNext ? "O" : "X";
        }
 
     }
