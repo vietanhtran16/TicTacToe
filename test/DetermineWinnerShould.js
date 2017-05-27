@@ -179,7 +179,7 @@ describe("Convert square coordinates to squares array index", function(){
    it("Convert 1,1 coordinate to correct index - 0", function () {
        let expect = 0;
        let input = "1,1";
-       let actual = ConvertCoorDinateToArrayIndex(input);
+       let actual = ConvertCoordinateToArrayIndex(input);
        assert.equal(expect, actual);
    })
 });
