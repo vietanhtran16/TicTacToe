@@ -181,7 +181,50 @@ describe("Convert square coordinates to squares array index", function(){
        let input = "1,1";
        let actual = ConvertCoordinateToArrayIndex(input);
        assert.equal(expect, actual);
-   })
+   });
+
+    it("Convert 2,1 coordinate to correct index - 3", function () {
+        let expect = 3;
+        let input = "2,1";
+        let actual = ConvertCoordinateToArrayIndex(input);
+        assert.equal(expect, actual);
+    });
+
+    it("Convert 3,2 coordinate to correct index - 7", function () {
+        let expect = 7;
+        let input = "3,2";
+        let actual = ConvertCoordinateToArrayIndex(input);
+        assert.equal(expect, actual);
+    });
+
+    it("Convert 2,3 coordinate to correct index - 5", function () {
+        let expect = 5;
+        let input = "2,3";
+        let actual = ConvertCoordinateToArrayIndex(input);
+        assert.equal(expect, actual);
+    });
+
+    it("Convert 1,3 coordinate to correct index - 2", function () {
+        let expect = 2;
+        let input = "1,3";
+        let actual = ConvertCoordinateToArrayIndex(input);
+        assert.equal(expect, actual);
+    });
+
+    it("Convert 2,2 coordinate to correct index - 4", function () {
+        let expect = 4;
+        let input = "2,2";
+        let actual = ConvertCoordinateToArrayIndex(input);
+        assert.equal(expect, actual);
+    });
+
+    it("Convert 3,1 coordinate to correct index - 6", function () {
+        let expect = 6;
+        let input = "3,1";
+        let actual = ConvertCoordinateToArrayIndex(input);
+        assert.equal(expect, actual);
+    });
+
 });
 
 function addPlayerInputToSpecifiedIndex(board, specifiedIndex) {
@@ -227,10 +270,14 @@ function DetermineWinner(board) {
     return null;
 }
 
-function ConvertCoordinateToArrayIndex(input){
+function GetCoordinates(input) {
     let coordinateInput = input.split(',');
     let rowCoordinate = coordinateInput[0];
     let columnCoordinate = coordinateInput[1];
+    return {rowCoordinate, columnCoordinate};
+}
+function ConvertCoordinateToArrayIndex(input){
+    let {rowCoordinate, columnCoordinate} = GetCoordinates(input);
     let startingIndexOfArray = 0;
     let squareSize = 3;
     let startingIndexOfSpecifiedRow = startingIndexOfArray + (squareSize * (rowCoordinate - 1));
