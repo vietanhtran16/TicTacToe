@@ -1,11 +1,11 @@
 /**
  * Created by Viet Anh Tran on 21-May-17.
  */
-import {DeterminWinner, addPlayerInputToSpecifiedIndex} from 'test/DetermineWinnerShould'
+import {DetermineWinner, addPlayerInputToSpecifiedIndex} from 'test/DetermineWinnerShould'
 
 var board = {squares: Array(9).fill(null), xIsNext: true};
 
-while(DeterminWinner(board) == null && board.squares.includes(null))
+while(DetermineWinner(board) == null && board.squares.includes(null))
 {
     let currentUser = board.xIsNext ? "X" : "O";
     let squares = board.squares;
@@ -16,7 +16,7 @@ while(DeterminWinner(board) == null && board.squares.includes(null))
     }
     addPlayerInputToSpecifiedIndex(board, userInput);
 }
-if(DeterminWinner(board)) {
+if(DetermineWinner(board)) {
     let winner = board.xIsNext ? "O" : "X";
     alert("The winner is " + winner);
 }

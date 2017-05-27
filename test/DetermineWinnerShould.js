@@ -97,7 +97,7 @@ describe("Determine if most recent input has won or not",function () {
         let squares = [null, "X", "O",
                        null, "O", "X",
                        null, null,null];
-        let actual = DeterminWinner({squares: squares, xIsNext: true });
+        let actual = DetermineWinner({squares: squares, xIsNext: true });
         assert.equal(expect, actual);
     });
 
@@ -106,7 +106,7 @@ describe("Determine if most recent input has won or not",function () {
         let squares = ["X", "X", "X",
                        null, "O", "O",
                        null, null,null];
-        let actual = DeterminWinner({squares: squares, xIsNext: false });
+        let actual = DetermineWinner({squares: squares, xIsNext: false });
         assert.equal(expect, actual);
     });
 
@@ -115,7 +115,7 @@ describe("Determine if most recent input has won or not",function () {
         let squares = ["O", "X", "X",
                        "O", "O", "O",
                        "X", null,null];
-        let actual = DeterminWinner({squares: squares, xIsNext: true });
+        let actual = DetermineWinner({squares: squares, xIsNext: true });
         assert.equal(expect, actual);
     });
 
@@ -124,7 +124,7 @@ describe("Determine if most recent input has won or not",function () {
         let squares = ["O", null, null,
                        null, "O", null,
                        "X", "X","X"];
-        let actual = DeterminWinner({squares: squares, xIsNext: false });
+        let actual = DetermineWinner({squares: squares, xIsNext: false });
         assert.equal(expect, actual);
     });
 
@@ -133,7 +133,7 @@ describe("Determine if most recent input has won or not",function () {
         let squares = ["O", "X", "X",
                        "O", "X", null,
                        "O", null,null];
-        let actual = DeterminWinner({squares: squares, xIsNext: true });
+        let actual = DetermineWinner({squares: squares, xIsNext: true });
         assert.equal(expect, actual);
     });
 
@@ -143,7 +143,7 @@ describe("Determine if most recent input has won or not",function () {
                        null, "O", null,
                        "X",  "O", "X"];
 
-        let actual = DeterminWinner({squares: squares, xIsNext: true });
+        let actual = DetermineWinner({squares: squares, xIsNext: true });
         assert.equal(expect, actual);
     });
 
@@ -152,7 +152,7 @@ describe("Determine if most recent input has won or not",function () {
         let squares = [null, "O", "X",
                        null, "O", "X",
                        null, null,"X"];
-        let actual = DeterminWinner({squares: squares, xIsNext: false });
+        let actual = DetermineWinner({squares: squares, xIsNext: false });
         assert.equal(expect, actual);
     });
 
@@ -161,7 +161,7 @@ describe("Determine if most recent input has won or not",function () {
         let squares = ["X", "O", null,
                        null, "X", "O",
                        null, null,"X"];
-        let actual = DeterminWinner({squares: squares, xIsNext: false });
+        let actual = DetermineWinner({squares: squares, xIsNext: false });
         assert.equal(expect, actual);
     });
 
@@ -170,7 +170,7 @@ describe("Determine if most recent input has won or not",function () {
         let squares = [null, "X", "O",
                        "X", "O", null,
                        "O", "X",null];
-        let actual = DeterminWinner({squares: squares, xIsNext: true });
+        let actual = DetermineWinner({squares: squares, xIsNext: true });
         assert.equal(expect, actual);
     });
 });
@@ -203,7 +203,7 @@ function GetAllIndexOfRecentInput(board){
     return indexOfLatestPlayerInput;
 }
 
-function DeterminWinner(board) {
+function DetermineWinner(board) {
     const winnerLines = [
         [0, 1, 2],
         [3, 4, 5],
