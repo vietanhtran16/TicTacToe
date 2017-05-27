@@ -271,7 +271,7 @@ function DetermineWinner(board) {
        }
 
     }
-    return null;
+    return 0;
 }
 
 function GetCoordinates(input) {
