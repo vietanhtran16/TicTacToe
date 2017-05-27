@@ -5,7 +5,7 @@ import {DetermineWinner, addPlayerInputToSpecifiedIndex} from 'test/DetermineWin
 
 var board = {squares: Array(9).fill(null), xIsNext: true};
 
-while(DetermineWinner(board) == null && board.squares.includes(null))
+while(DetermineWinner(board) == 0 && board.squares.includes(null))
 {
     let currentUser = board.xIsNext ? "X" : "O";
     let squares = board.squares;
