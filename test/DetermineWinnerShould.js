@@ -175,7 +175,11 @@ describe("Determine if most recent input has won or not",function () {
     });
 });
 
-describe("Convert square coordinates to squares array index", function(){
+describe("Convert square coordinates to squares array index. Here is an example of the board\n" +
+    " |1|2|3|\n" +
+    "1|0|1|2|\n" +
+    "2|3|4|5|\n" +
+    "3|6|7|8|", function(){
    it("Convert 1,1 coordinate to correct index - 0", function () {
        let expect = 0;
        let input = "1,1";
