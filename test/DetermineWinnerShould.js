@@ -93,7 +93,7 @@ describe("Get all indexes of most recent player input",function () {
 
 describe("Determine if most recent input has won or not",function () {
     it("Return null since most recent input did not win", function () {
-        let expect = null;
+        let expect = 0;
         let squares = [null, "X", "O",
                        null, "O", "X",
                        null, null,null];
