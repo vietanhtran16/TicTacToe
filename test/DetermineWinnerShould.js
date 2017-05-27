@@ -227,3 +227,15 @@ function DetermineWinner(board) {
     return null;
 }
 
+function ConvertCoordinateToArrayIndex(input){
+    let coordinateInput = input.split(',');
+    let rowCoordinate = coordinateInput[0];
+    let columnCoordinate = coordinateInput[1];
+    let startingIndexOfArray = 0;
+    let squareSize = 3;
+    let startingIndexOfSpecifiedRow = startingIndexOfArray + (squareSize * (rowCoordinate - 1));
+    let indexWithinSpecifiedRow = (columnCoordinate - 1);
+
+    return startingIndexOfSpecifiedRow + indexWithinSpecifiedRow;
+}
+
