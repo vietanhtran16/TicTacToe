@@ -3,9 +3,9 @@
  */
 import {DetermineWinner, addPlayerInputToSpecifiedIndex} from 'test/DetermineWinnerShould'
 
-var board = {squares: Array(9).fill(null), xIsNext: true};
+var board = {squares: Array(9).fill(" "), xIsNext: true};
 
-while(DetermineWinner(board) == 0 && board.squares.includes(null))
+while(DetermineWinner(board) == 0 && board.squares.includes(" "))
 {
     let currentUser = board.xIsNext ? "X" : "O";
     let squares = board.squares;
