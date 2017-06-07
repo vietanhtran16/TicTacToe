@@ -244,9 +244,13 @@ describe("Convert square coordinates to squares array index. Here is an example 
 });
 
 function addPlayerInputToSpecifiedIndex(board, specifiedIndex) {
-    board.squares[specifiedIndex] = board.xIsNext ? "X" : "O";
-    board.xIsNext = !board.xIsNext;
-    return board;
+    if (board.squares[specifiedIndex]) {
+        return board;
+    } else {
+        board.squares[specifiedIndex] = board.xIsNext ? "X" : "O";
+        board.xIsNext = !board.xIsNext;
+        return board;
+    }
 }
 
 function GetAllIndexOfRecentInput(board){
