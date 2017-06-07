@@ -58,7 +58,7 @@ describe('Add player input to array', function () {
         assert.deepEqual(expected, actual);
     });
 
-    it("Player cannot select square which already has a value", function (){
+    it("Player cannot select square which already has a value - Test 1", function (){
         let expected = {squares: [null, "X", null,
                                  "X", null, "O",
                                  "X", "O", null],
@@ -67,6 +67,30 @@ describe('Add player input to array', function () {
                        "X", null, "O",
                        "X", "O", null];
         let actual = addPlayerInputToSpecifiedIndex({squares: squares, xIsNext: false}, 1);
+        assert.deepEqual(expected, actual);
+    });
+
+    it("Player cannot select square which already has a value - Test 2", function (){
+        let expected = {squares: [null, "X", null,
+                                  "X", null, "O",
+                                  "X", "O", null],
+                                  xIsNext: false};
+        let squares = [null, "X", null,
+                       "X", null, "O",
+                       "X", "O", null];
+        let actual = addPlayerInputToSpecifiedIndex({squares: squares, xIsNext: false}, 7);
+        assert.deepEqual(expected, actual);
+    });
+
+    it("Player cannot select square which already has a value - Test 2", function (){
+        let expected = {squares: [null, "X", null,
+                                  "X", null, "O",
+                                  "X", "O", null],
+                                  xIsNext: false};
+        let squares = [null, "X", null,
+                       "X", null, "O",
+                       "X", "O", null];
+        let actual = addPlayerInputToSpecifiedIndex({squares: squares, xIsNext: false}, 3);
         assert.deepEqual(expected, actual);
     });
 
