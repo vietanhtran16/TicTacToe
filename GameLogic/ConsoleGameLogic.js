@@ -20,4 +20,5 @@ function returnResult(board) {
         let winner = board.xIsNext ? "O" : "X";
         return "The winner is " + winner;
     }
+    return "Oh no! No one won the game";
 }
