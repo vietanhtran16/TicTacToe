@@ -13,3 +13,8 @@ function returnBoardForPrompt(board) {
         `3|${board.squares[6]}|${board.squares[7]}|${board.squares[8]}|`;
     return promptMessage;
 }
+
+function returnResult(board) {
+    let winner = board.xIsNext ? "O" : "X";
+    return "The winner is " + winner;
+}
