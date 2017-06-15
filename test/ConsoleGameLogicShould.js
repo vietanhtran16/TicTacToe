@@ -64,4 +64,13 @@ describe("Return result message for alert", function () {
         let actual = returnResult({squares: squares, xIsNext: false});
         assert.equal(expected, actual);
     });
+
+    it("Return O is the winner", function () {
+        let expected = "The winner is O";
+        let squares = ["X", "O", "X",
+                       "X", "O", "O",
+                       "  ", "O","X"];
+        let actual = returnResult({squares: squares, xIsNext: true});
+        assert.equal(expected, actual);
+    });
 });
