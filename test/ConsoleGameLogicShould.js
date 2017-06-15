@@ -9,8 +9,6 @@ var code = fs.readFileSync(path);
 vm.runInThisContext(code);
 
 var assert = require('assert');
-var describe = require("mocha");
-var it = require("mocha");
 
 describe("Return current board to display on prompt", function () {
     it("Display empty board", function () {
@@ -63,7 +61,7 @@ describe("Return result message for alert", function () {
         let squares = ["X", "O", "X",
                        "X", "O", "O",
                        "X", "  ","  "];
-        let actual = returnMessage({squares: squares, xIsNext: false});
+        let actual = returnResult({squares: squares, xIsNext: false});
         assert.equal(expected, actual);
     });
 });
