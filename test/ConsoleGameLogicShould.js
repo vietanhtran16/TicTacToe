@@ -54,3 +54,14 @@ describe("Return current board to display on prompt", function () {
         assert.equal(expected, actual);
     });
 });
+
+describe("Return result message", function () {
+    it("Return X is the winner", function () {
+        let expected = "The winner is X";
+        let squares = ["X", "O", "X",
+                       "X", "O", "O",
+                       "X", "  ","  "];
+        let actual = returnResult({squares: squares, xIsNext: false });
+        assert.equal(expected, actual);
+    });
+});
