@@ -73,4 +73,13 @@ describe("Return result message for alert", function () {
         let actual = returnResult({squares: squares, xIsNext: true});
         assert.equal(expected, actual);
     });
+
+    it("Return no one won the game", function () {
+        let expected = "Oh no! No one won the game";
+        let squares = ["X", "O", "X",
+                       "X", "O", "O",
+                       "O", "X","X"];
+        let actual = returnResult({squares: squares, xIsNext: false});
+        assert.equal(expected, actual);
+    });
 });
