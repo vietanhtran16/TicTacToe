@@ -7,7 +7,7 @@ function returnBoardForPrompt(board) {
     var promptMessage = `Hey ${currentUser}, it is your turn. ` +
         "\nPlay the game by entering row-column coordinate of your squares. For example, 1,1 for top left squares" +
         "\nHere is what the board looks like " +
-        "\n|1|2|3" +
+        "\n  |1|2|3" +
         `\n1|${board.squares[0]}|${board.squares[1]}|${board.squares[2]}|` +
         `\n2|${board.squares[3]}|${board.squares[4]}|${board.squares[5]}|` +
         `\n3|${board.squares[6]}|${board.squares[7]}|${board.squares[8]}|`;
