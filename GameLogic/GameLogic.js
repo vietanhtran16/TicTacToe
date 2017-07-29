@@ -2,11 +2,11 @@
  * Created by Viet Anh Tran on 06-May-17.
  */
 function addPlayerInputToSpecifiedIndex(board, specifiedIndex) {
-    if (board.squares[specifiedIndex]) {
-        return board;
-    } else {
+    if (board.squares[specifiedIndex].isNullOrWhiteSpaces()) {
         board.squares[specifiedIndex] = board.xIsNext ? "X" : "O";
         board.xIsNext = !board.xIsNext;
+        return board;
+    } else {
         return board;
     }
 }
